@@ -16,4 +16,3 @@ class ToDoItem(BaseModel):
 @app.post('/to_do')
 def todo(item: ToDoItem):
     return {'message': 'ToDo item created successfully', 'item': item}
-#hello
