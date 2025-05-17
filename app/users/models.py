@@ -1,10 +1,12 @@
-from sqlalchemy import Column, String, PrimaryKeyConstraint
-
+from sqlalchemy import Column, String,Boolean,Integer,DateTime, PrimaryKeyConstraint
+from datetime import datetime
 from app.database import Base
 
-class user(Base):
+class User(Base):
     __tablename__ = "users"
-    id = Column(String,primary_key= True,nullable=False)
-    name = Column(String,nullable = False)
+    id = Column(Integer, primary_key=True, index=True)
+    title = Column(String, nullable=False)
+
+
 
 
