@@ -11,5 +11,5 @@ async_session_maker = sessionmaker(engine, class_= AsyncSession, expire_on_commi
 class Base(DeclarativeBase):
     pass
 
-from app.task.models import Task
-from app.users.models import User
+#from app.task.models import Task
+#from app.users.models import User
